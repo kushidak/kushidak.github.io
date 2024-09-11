@@ -1,0 +1,91 @@
+<style>
+.spice-curry-section {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 0 649px 12px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+
+.curry-title {
+  color: #000;
+  font: 400 96px Inter, sans-serif;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+
+.curry-image {
+  aspect-ratio: 1.75;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 17px;
+  flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .spice-curry-section {
+    padding-bottom: 100px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .text-column,
+  .image-column {
+    width: 100%;
+  }
+
+  .curry-title {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .curry-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+
+<section class="spice-curry-section">
+  <div class="content-wrapper">
+    <div class="text-column">
+      <h1 class="curry-title">家庭科の授業で作ったスパイスカレー</h1>
+    </div>
+    <div class="image-column">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/56db5d24963630c8b69488fabd05653ef11729de47668e396fb5598239a8e0af?placeholderIfAbsent=true&apiKey=6ba12af1e4c240e8904dae86b6e00c5e" class="curry-image" alt="Spice curry made in home economics class" />
+    </div>
+  </div>
+</section>
